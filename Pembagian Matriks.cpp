@@ -58,3 +58,22 @@ cout<<"["<<"\t"<<**matBinvers<<"\t"<<"  "<<*(*(matBinvers)+1)<<"\t"<<"   "<<"]"<
 cout<<"["<<"\t"<<*(*(matBinvers+1))<<"\t"<<*(*(matBinvers+1)+1)<<"\t"<<"   "<<"]"<<endl;
 	
 cout<<endl<<endl<<endl;
+
+
+float mathasil_1[2][2];
+float (*matHasil)[2] = mathasil_1;
+	
+mathasil_1[0][0] = (matbinvers[0][0]*MatriksA[0][0])+(matbinvers[0][1]*MatriksA[1][0]);
+mathasil_1[0][1] = (matbinvers[0][0]*MatriksA[0][1])+(matbinvers[0][1]*MatriksA[1][1]);
+mathasil_1[1][0] = (matbinvers[1][0]*MatriksA[0][0])+(matbinvers[1][1]*MatriksA[1][0]);
+mathasil_1[1][1] = (matbinvers[1][0]*MatriksA[0][1])+(matbinvers[1][1]*MatriksA[1][1]);
+
+	
+cout<<" "<<"==== Hasil Pembagian ===="<<endl;
+cout<<" "<<"====   untuk BX = A  ===="<<endl;
+cout<<" "<<"====     X = B'.A    ===="<<endl<<endl;
+cout<<"["<<"\t"<<**matHasil_1<<"\t"<<*(*(matHasil_1)+1)<<"\t"<<"  "<<"]"<<endl;
+cout<<"["<<"\t"<<" "<<*(*(matHasil_1+1))<<"\t"<<" "<<*(*(matHasil_1+1)+1)<<"\t"<<"  "<<"]"
+cout<<endl;
+
+cout<<endl<<endl<<endl;
