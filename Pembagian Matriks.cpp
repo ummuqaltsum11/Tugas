@@ -77,3 +77,19 @@ cout<<"["<<"\t"<<" "<<*(*(matHasil_1+1))<<"\t"<<" "<<*(*(matHasil_1+1)+1)<<"\t"<
 cout<<endl;
 
 cout<<endl<<endl<<endl;
+
+	
+float mathasil_2[2][2];
+float (*matHasil_2)[2] = mathasil_2;
+	
+mathasil_2[0][0] = (MatriksA[0][0]*matbinvers[0][0])+(MatriksA[0][1]*matbinvers[1][0]);
+mathasil_2[0][1] = (MatriksA[0][0]*matbinvers[0][1])+(MatriksA[0][1]*matbinvers[1][1]);
+mathasil_2[1][0] = (MatriksA[1][0]*matbinvers[0][0])+(MatriksA[1][1]*matbinvers[1][0]);
+mathasil_2[1][1] = (MatriksA[1][0]*matbinvers[0][1])+(MatriksA[1][1]*matbinvers[1][1]);
+	
+	
+cout<<" "<<"==== Hasil Pembagian ===="<<endl;
+cout<<" "<<"====   untuk XB = A  ===="<<endl;
+cout<<" "<<"====     X = A.B'    ===="<<endl<<endl;
+cout<<"["<<"\t"<<**mathasil_2<<"\t"<<*(*(mathasil_2)+1)<<"\t"<<"  "<<"]"<<endl;
+cout<<"["<<"\t"<<*(*(mathasil_2+1))<<"\t"<<*(*(matHasil_2+1)+1)<<"\t"<<"  "<<"]"<<endl;
