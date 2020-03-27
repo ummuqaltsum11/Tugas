@@ -2,6 +2,12 @@
 using namespace std;
 
 int main() {
+
+cout<<"Nama:"<<endl;
+cout<<"Ummu Qaltsum"<<"\t"<<"\t"<<"1917051008"<<endl;
+cout<<"Maghviraturreimadhiney"<<"\t"<<"1917051021"<<endl;
+cout<<endl<<endl<<endl;
+	
 	
 cout<<"========================="<<endl<<endl;
 cout<<"  PEMBAGIAN MATRIKS 2X2"	 <<endl<<endl;
@@ -61,7 +67,7 @@ cout<<endl<<endl<<endl;
 
 
 float mathasil_1[2][2];
-float (*matHasil)[2] = mathasil_1;
+float (*matHasil_1)[2] = mathasil_1;
 	
 mathasil_1[0][0] = (matbinvers[0][0]*MatriksA[0][0])+(matbinvers[0][1]*MatriksA[1][0]);
 mathasil_1[0][1] = (matbinvers[0][0]*MatriksA[0][1])+(matbinvers[0][1]*MatriksA[1][1]);
@@ -73,7 +79,7 @@ cout<<" "<<"==== Hasil Pembagian ===="<<endl;
 cout<<" "<<"====   untuk BX = A  ===="<<endl;
 cout<<" "<<"====     X = B'.A    ===="<<endl<<endl;
 cout<<"["<<"\t"<<**matHasil_1<<"\t"<<*(*(matHasil_1)+1)<<"\t"<<"  "<<"]"<<endl;
-cout<<"["<<"\t"<<" "<<*(*(matHasil_1+1))<<"\t"<<" "<<*(*(matHasil_1+1)+1)<<"\t"<<"  "<<"]"
+cout<<"["<<"\t"<<" "<<*(*(matHasil_1+1))<<"\t"<<" "<<*(*(matHasil_1+1)+1)<<"\t"<<"  "<<"]";
 cout<<endl;
 
 cout<<endl<<endl<<endl;
@@ -93,3 +99,6 @@ cout<<" "<<"====   untuk XB = A  ===="<<endl;
 cout<<" "<<"====     X = A.B'    ===="<<endl<<endl;
 cout<<"["<<"\t"<<**mathasil_2<<"\t"<<*(*(mathasil_2)+1)<<"\t"<<"  "<<"]"<<endl;
 cout<<"["<<"\t"<<*(*(mathasil_2+1))<<"\t"<<*(*(matHasil_2+1)+1)<<"\t"<<"  "<<"]"<<endl;
+
+return 0;
+}
