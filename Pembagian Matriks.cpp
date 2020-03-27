@@ -43,6 +43,18 @@ cout<<"["<<"\t"<<" "<<**matBadj<<"\t"<<*(*(matBadj)+1)<<"\t"<<"]"<<endl;
 cout<<"["<<"\t"<<*(*(matBadj+1))<<"\t"<<" "<<*(*(matBadj+1)+1)<<"\t"<<"]"<<endl;
 	
 cout<<endl<<endl<<endl;
+
 	
 float matbinvers[2][2];
 float (*matBinvers)[2] = matbinvers;
+
+matbinvers[0][0] = matbadj[0][0] / detB;
+matbinvers[0][1] = matbadj[0][1] / detB;
+matbinvers[1][0] = matbadj[1][0] / detB;
+matbinvers[1][1] = matbadj[1][1] / detB;
+	
+cout<<"  === Invers Matriks B ==="<<endl;
+cout<<"["<<"\t"<<**matBinvers<<"\t"<<"  "<<*(*(matBinvers)+1)<<"\t"<<"   "<<"]"<<endl;
+cout<<"["<<"\t"<<*(*(matBinvers+1))<<"\t"<<*(*(matBinvers+1)+1)<<"\t"<<"   "<<"]"<<endl;
+	
+cout<<endl<<endl<<endl;
