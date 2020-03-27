@@ -3,6 +3,10 @@ using namespace std;
 
 int main() {
 	
+cout<<"========================="<<endl<<endl;
+cout<<"  PEMBAGIAN MATRIKS 2X2"	 <<endl<<endl;
+cout<<"========================="<<endl<<endl<<endl;
+	
 int MatriksA[2][2] = {4,3, 2,1};
 int (*mat)[2] = MatriksA;
 	
@@ -34,7 +38,7 @@ matbadj[0][1] = (-matb[0][1]);
 matbadj[1][0] = (-matb[1][0]);
 matbadj[1][1] =   matb[0][0]; 
     	
-cout<<"  === Adj Matriks B ==="<<endl;
+cout<<"  === Adj Matriks B ==="<<endl; // adj = adjoin
 cout<<"["<<"\t"<<" "<<**matBadj<<"\t"<<*(*(matBadj)+1)<<"\t"<<"]"<<endl;
 cout<<"["<<"\t"<<*(*(matBadj+1))<<"\t"<<" "<<*(*(matBadj+1)+1)<<"\t"<<"]"<<endl;
 	
