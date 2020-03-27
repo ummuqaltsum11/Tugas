@@ -13,6 +13,7 @@ cout<<"========================="<<endl<<endl;
 cout<<"  PEMBAGIAN MATRIKS 2X2"	 <<endl<<endl;
 cout<<"========================="<<endl<<endl<<endl;
 	
+
 int MatriksA[2][2] = {4,3, 2,1};
 int (*mat)[2] = MatriksA;
 	
@@ -22,6 +23,7 @@ cout<<"["<<"\t"<<*(*(mat+1))<<"\t"<<*(*(mat+1)+1)<<"\t"<<"]"<<endl;
 	
 cout<<endl<<endl<<endl;
 
+
 int MatriksB[2][2] = {1,2, 3,4};
 int (*matb)[2] = MatriksB;
 	
@@ -30,12 +32,14 @@ cout<<"["<<"\t"<<**matb<<"\t"<<*(*(matb)+1)<<"\t"<<"]"<<endl;
 cout<<"["<<"\t"<<*(*(matb+1))<<"\t"<<*(*(matb+1)+1)<<"\t"<<"]"<<endl;
 	
 cout<<endl<<endl<<endl;
-	
+
+
 int detB = ( (matb[0][0]*matb[1][1]) - (matb[0][1]*matb[1][0]) );
-cout<<"Determinan Matriks B = "<< detB <<endl<<endl<<endl;
+cout<<"Determinan Matriks B = "<<detB;
     
-cout<<endl;
+cout<<endl<<endl<<endl;
     
+
 float matbadj[2][2];
 float (*matBadj)[2] = matbadj;
 	
