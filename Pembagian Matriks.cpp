@@ -9,9 +9,9 @@ cout<<"Maghviraturreimadhiney"<<"\t"<<"1917051021"<<endl;
 cout<<endl<<endl<<endl;
 	
 	
-cout<<"========================="<<endl<<endl;
-cout<<"  PEMBAGIAN MATRIKS 2X2"	 <<endl<<endl;
-cout<<"========================="<<endl<<endl<<endl;
+cout<<"=========================="<<endl<<endl;
+cout<<"  PEMBAGIAN MATRIKS 2X2   "<<endl<<endl;
+cout<<"=========================="<<endl<<endl<<endl;
 	
 
 int MatriksA[2][2] = {4,3, 2,1};
@@ -48,7 +48,7 @@ matbadj[0][1] = (-matb[0][1]);
 matbadj[1][0] = (-matb[1][0]);
 matbadj[1][1] =   matb[0][0]; 
     	
-cout<<"  === Adj Matriks B ==="<<endl; // adj = adjoin
+cout<<"  === Adj Matriks B ==="<<endl; // adj = adjoin matriks B
 cout<<"["<<"\t"<<" "<<**matBadj<<"\t"<<*(*(matBadj)+1)<<"\t"<<"]"<<endl;
 cout<<"["<<"\t"<<*(*(matBadj+1))<<"\t"<<" "<<*(*(matBadj+1)+1)<<"\t"<<"]"<<endl;
 	
